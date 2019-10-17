@@ -1,0 +1,54 @@
+body {
+    width: 100%;
+    padding: 5px;
+    background: lightgray;
+}
+
+div * {
+    text-decoration: none;
+    color: white;
+}
+
+.bouton_description {
+    background: #35BC7A;
+    max-width: 400px;
+    padding: 20px 30px 44px 30px;
+    float: left;
+}
+
+.bouton_description a {
+    border: 2px solid;
+    padding: 10px 15px;
+    margin-right: 20px;
+}
+
+.bouton_description i {
+    font-size: 16px !important;
+}
+.bouton_description p {
+    margin-bottom: 25px;
+    max-width: 370px;
+}
+
+i:not(.bouton_description) {
+    font-size: 50px;
+}
+
+div[class]:not(.bouton_description) {
+    width: 210px;
+    height: 210px;
+    display: inline-block;
+}
+.bouton_profile {
+    background: #FF9E00;
+}
+
+div[class]:not(.bouton_description) a i {
+    margin-top: 70px;
+    margin-left: 76px;
+}
+
+div[class]:not(.bouton_description) a p {
+    font-size: 12px;
+    text-align: center;
+}
