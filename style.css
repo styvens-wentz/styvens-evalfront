@@ -1,7 +1,9 @@
 body {
     width: 100%;
-    padding: 5px;
-    background: lightgray;
+    margin: 0;
+    padding: 0;
+    font-size: 1.09vw;
+    text-align: center;
 }
 
 div * {
@@ -9,46 +11,115 @@ div * {
     color: white;
 }
 
-.bouton_description {
-    background: #35BC7A;
-    max-width: 400px;
-    padding: 20px 30px 44px 30px;
+#main {
+    margin: auto;
+    width: 75vw;
+    background: #c3c3c3;
+    height: 45vw;
+    box-shadow: 0 0 1vw black;
+}
+
+.ensemble_bouton {
     float: left;
+    width: 45vw;
 }
 
-.bouton_description a {
-    border: 2px solid;
-    padding: 10px 15px;
-    margin-right: 20px;
+.photo {
+    float: left;
+    width: 30vw;
 }
 
-.bouton_description i {
-    font-size: 16px !important;
-}
-.bouton_description p {
-    margin-bottom: 25px;
-    max-width: 370px;
+.bouton_description, .bouton_blog {
+    background: #35BC7A;
 }
 
-i:not(.bouton_description) {
-    font-size: 50px;
-}
-
-div[class]:not(.bouton_description) {
-    width: 210px;
-    height: 210px;
-    display: inline-block;
-}
 .bouton_profile {
     background: #FF9E00;
 }
 
-div[class]:not(.bouton_description) a i {
-    margin-top: 70px;
-    margin-left: 76px;
+.bouton_experience, .bouton_contact {
+    background: #1E8BC4;
 }
 
-div[class]:not(.bouton_description) a p {
-    font-size: 12px;
-    text-align: center;
+.bouton_education {
+    background: #F15A49;
+}
+
+.bouton_social, .bouton_portfolio {
+    background: #F86925;
+}
+
+.fa-info, .fa-download {
+    font-size: 1.09vw !important;
+    text-shadow: 3px -3px 3px black;
+    margin-right: 0.3vw;
+}
+
+i {
+    font-size: 4.09vw;
+    text-shadow: 5px -5px 5px black;
+}
+
+div[class^="bouton_"]:not(.bouton_description) {
+    height: 15vw;
+    width: 15vw;
+}
+
+.bouton_description {
+    height: 15vw;
+    width: 30vw;
+    text-align: left;
+}
+
+#photo_1 {
+    height: 45vw;
+    width: 30vw;
+}
+
+h2 {
+    font-size: 1.9vw;
+}
+
+#description, p {
+    font-size: 1vw;
+}
+
+#description {
+    margin-bottom: -0.5vw;
+}
+
+div[class^="bouton"] {
+    float: left;
+}
+
+i {
+    margin-top: 4.09vw;
+}
+
+.bouton_description * {
+    margin-left: 1.36vw;
+}
+
+a#resume, a#contact {
+    border: 0.15vw solid;
+    padding: 0.4vw 1.3vw 0.3vw 0;
+    border-radius: 1vw;
+}
+
+div[class^="bouton_"]:hover, img:hover {
+    transition: 0.3s;
+    box-shadow: 0 0 10px black;
+}
+
+div[class^="bouton_"]:not(.bouton_description):hover i, .bouton_description a:hover i {
+    transition: 0.7s;
+    transform: rotateY(1440deg);
+}
+
+div[class^="bouton_"]:not(.bouton_description):hover p, .bouton_description a:hover p {
+    font-size: 1.8vw;
+}
+
+a:hover:not(i), a:hover:not(i) {
+    font-size: 1.4vw;
 }
