@@ -278,4 +278,17 @@ a:hover:not(i), a:hover:not(i) {
     body {
         font-size: 3.5425vw;
     }
+
+    div[class^="bouton_"]:hover, img:hover {
+        transition: none;
+        box-shadow: 0 0 0 black;
+    }
+
+    div[class^="bouton_"]:not(.bouton_description):hover p, .bouton_description a:hover p {
+        font-size: 1.3vw;
+    }
+
+    a:hover:not(i), a:hover:not(i) {
+        font-size: 1.41vw;
+    }
 }
