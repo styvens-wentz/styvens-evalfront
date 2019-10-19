@@ -285,10 +285,10 @@ a:hover:not(i), a:hover:not(i) {
     }
 
     div[class^="bouton_"]:not(.bouton_description):hover p, .bouton_description a:hover p {
-        font-size: 1.3vw;
+        font-size: 3.25vw;
     }
 
     a:hover:not(i), a:hover:not(i) {
-        font-size: 1.41vw;
+        font-size: 3.5425vw;
     }
 }
