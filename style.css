@@ -58,6 +58,7 @@ div * {
 i {
     font-size: 4.09vw;
     text-shadow: 5px -5px 5px black;
+    margin-top: 4.09vw;
 }
 
 div[class^="bouton_"]:not(.bouton_description) {
@@ -92,10 +93,6 @@ div[class^="bouton"] {
     float: left;
 }
 
-i {
-    margin-top: 4.09vw;
-}
-
 .bouton_description * {
     margin-left: 1.36vw;
 }
@@ -122,4 +119,163 @@ div[class^="bouton_"]:not(.bouton_description):hover p, .bouton_description a:ho
 
 a:hover:not(i), a:hover:not(i) {
     font-size: 1.4vw;
+}
+
+@media(max-width: 1366px)  {
+    body {
+        font-size: 1.41vw;
+    }
+
+    #main {
+        margin: 1vw;
+        width: 97.5vw;
+        height: 58.5vw;
+        box-shadow: 0 0 1.3vw black;
+    }
+
+    .ensemble_bouton {
+        width: 58.5vw;
+    }
+
+    .photo {
+        width: 39vw;
+    }
+
+    .fa-info, .fa-download {
+        font-size: 1.41vw !important;
+        margin-right: 0.39vw;
+    }
+
+    i {
+        font-size: 5.32vw;
+        margin-top: 5.31vw;
+    }
+
+    div[class^="bouton_"]:not(.bouton_description) {
+        height: 19.5vw;
+        width: 19.5vw;
+    }
+
+    .bouton_description {
+        height: 19.5vw;
+        width: 39vw;
+    }
+
+    #photo_1 {
+        height: 58.5vw;
+        width: 39vw;
+    }
+
+    h2 {
+        font-size: 2.47vw;
+    }
+
+    #description, p {
+        font-size: 1.3vw;
+    }
+
+    #description {
+        margin-bottom: -1vw;
+    }
+
+    .bouton_description * {
+        margin-left: 1.768vw;
+    }
+
+    a#resume, a#contact {
+        border: 0.19vw solid;
+        padding: 0.52vw 1.69vw 0.39vw 0;
+        border-radius: 1.3vw;
+    }
+
+    div[class^="bouton_"]:hover, img:hover {
+        transition: none;
+        box-shadow: 0 0 0 black;
+    }
+
+    div[class^="bouton_"]:not(.bouton_description):hover i, .bouton_description a:hover i {
+        transition: 0.7s;
+        transform: rotateY(1440deg);
+        color: lightblue;
+    }
+
+    div[class^="bouton_"]:not(.bouton_description):hover p, .bouton_description a:hover p {
+        font-size: 1.3vw;
+    }
+
+    a:hover:not(i), a:hover:not(i) {
+        font-size: 1.41vw;
+    }
+}
+
+@media(max-width: 1024px) {
+    #main {
+        margin: 2vw auto auto;
+        width: 97.5vw;
+        height: auto;
+        box-shadow: 0 0 1.3vw black;
+    }
+
+    .ensemble_bouton {
+        width: 97.5vw;
+    }
+
+    .photo {
+        width: 48.75vw;
+        display: inline-block;
+        float: right;
+        margin-top: -48.75vw;
+    }
+
+    div[class^="bouton_"]:not(.bouton_description) {
+        height: 48.75vw;
+        width: 48.75vw;
+    }
+
+    .bouton_description {
+        height: 48.75vw;
+        width: 97.5vw;
+    }
+
+    #photo_1 {
+        height: 48.75vw;
+        width: 48.75vw;
+
+    }
+
+    h2 {
+        font-size: 6.175vw;
+    }
+
+    #description, p {
+        font-size: 3.25vw;
+    }
+
+    #description {
+        margin-bottom: -1.625vw;
+    }
+
+    .bouton_description * {
+        margin-left: 4.42vw;
+    }
+
+    a#resume, a#contact {
+        border: 0.4875vw solid;
+        padding: 1.3vw 4.225vw 0.975vw 0;
+        border-radius: 3.25vw;
+    }
+
+    .fa-info, .fa-download {
+        font-size: 3.5425vw !important;
+        margin-right: 0.975vw;
+    }
+
+    i {
+        font-size: 13.2925vw;
+        margin-top: 13.2925vw;
+    }
+
+    body {
+        font-size: 3.5425vw;
+    }
 }
