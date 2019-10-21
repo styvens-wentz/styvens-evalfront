@@ -1,7 +1,7 @@
 body {
     width: 100%;
     margin: 0;
-    padding: 0;
+    padding: 0.5vw 0 0;
     font-size: 1.09vw;
     text-align: center;
 }
@@ -209,8 +209,12 @@ a:hover:not(i), a:hover:not(i) {
 }
 
 @media(max-width: 1024px) {
+    body {
+        padding: 0;
+    }
+
     #main {
-        margin: 2vw auto auto;
+        margin: 1vw auto auto;
         width: 97.5vw;
         height: auto;
         box-shadow: 0 0 1.3vw black;
